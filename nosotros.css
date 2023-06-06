@@ -1,0 +1,40 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    text-align: center;
+}
+.puto{
+    display: flex;
+    margin-top: 40px;
+}
+.contenedor{
+    box-sizing: border-box;
+    color: white;
+    text-align: center;
+    margin: auto;
+    width: 70%;
+    height: 100%;
+    background-color: black;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px blue;
+
+}
+.contenedor h2, .contenedor p{
+    margin: 15px;
+}
+.volver-inicio {    
+    border-radius: 10px;    
+    color: white;
+    font-size: 30px;    
+}
+.volver-inicio a{    
+    text-decoration: none;
+    color: white;  
+    transition: all 0.5s ease;  
+}
+.volver-inicio a:hover{
+    font-size: 36px;
+
+}

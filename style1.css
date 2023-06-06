@@ -1,0 +1,136 @@
+body{
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: black;
+  color: white;
+}
+nav{
+  background-color: black;
+  color: white;
+  width: 100%;
+}
+nav .movil{
+  display: none;
+}
+nav .logo{
+  min-width: 250px;
+  font-size: 30px;
+  margin-left: 10px;
+  margin: auto;
+}
+nav a{
+  color: white;
+  text-decoration: none;
+  display: block;
+  padding: 20px 25px;
+}
+nav a:hover{
+  color: black;
+  background-color: rgb(100, 192, 238);
+}
+nav .escritorio{
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+nav .escritorio .primera_caja,
+nav .escritorio .segunda_caja_full{
+  display: flex;
+
+}
+nav .escritorio .segunda_caja_mini{
+  display: none;
+}
+@media screen and (max-width: 930px) {
+  nav .logo{
+    min-width: 80px;
+  }
+  nav .escritorio .segunda_caja_full{
+    display: none;
+  }
+  nav .escritorio .segunda_caja_mini{
+    display: block;
+  }
+  nav .segunda_caja_mini .submenu{
+    background-color: black;
+    position: absolute;
+    display: none;
+    
+  }
+  nav .segunda_caja_mini:hover .submenu{
+    display: block;
+  }
+}
+@media screen and (max-width: 700px){
+  nav .escritorio{
+    display: none;
+  }
+  nav .movil .logo{
+    margin-left: 10px;
+  }
+  nav .movil{
+    display: block;
+  }
+  nav .movil .encabezado{
+    display: flex;
+    justify-content: space-between;
+  }
+  nav .movil .encabezado .mas button{
+    border: none;
+    background-color: rgb(240, 240, 240);
+    padding: 7px;
+    cursor: pointer;
+  }
+
+
+  
+}
+
+.cuerpo{
+  display: flex;
+  background-color: rgba(240, 248, 255, 0);
+  color: rgb(255, 255, 255);
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  font-size: 40px;
+
+}
+
+.contenido{
+  margin: 100px;
+  background-color: rgb(0, 0, 0);
+  width: 55%;
+  overflow: hidden;
+}
+@media screen and (max-width: 1385px) {
+  .cuerpo .contenido h2, .cuerpo .contenido h4, .cuerpo .contenido p {
+    font-size: 37px;
+  }
+  
+}
+@media screen and (max-width: 1040px) {
+  .cuerpo .contenido h2, .cuerpo .contenido h4, .cuerpo .contenido p {
+    font-size: 35px;
+  }
+  
+}
+@media screen and (max-width: 990px) {
+  .cuerpo .contenido h2, .cuerpo .contenido h4, .cuerpo .contenido p {
+    font-size: 37px;
+    text-align: center;
+    justify-content: center;
+    margin: auto;
+  }
+  .cuerpo{
+    display: inline-block;
+    text-align: center;
+    justify-content: center;
+    margin: auto;
+  }
+  
+.imagen{
+  
+}
+
